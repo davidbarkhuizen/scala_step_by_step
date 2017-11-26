@@ -30,16 +30,16 @@ object module {
 
 	private def test() : Boolean = {
 
-		var item1 = "i"
-		var seq1 = Seq("a","b","c","d","e","f","g","h",item1)
+		val item1 = "i"
+		val seq1 = Seq("a","b","c","d","e","f","g","h",item1)
 
 		val oneMono = monomorphicIndexOf(seq1, item1) == Some(8)
 		println(monomorphicIndexOf(seq1, item1))
 		val onePoly = polymorphicIndexOf(seq1, item1, (x : String) => (x == item1)) == Some(8)
 		println(polymorphicIndexOf(seq1, item1, (x : String) => (x == item1)))
 
-		var item2 = 7
-		var seq2 = Seq(0,1,2,3,4,5,6,item2)
+		val item2 = 7
+		val seq2 = Seq(0,1,2,3,4,5,6,item2)
 		println(polymorphicIndexOf(seq2, item2, (x : Int) => (x == item2)))
 
 		return true
@@ -47,6 +47,6 @@ object module {
 
 	def main(args: Array[String]): Unit = {   
 
-		var testResult = test()		
+		val testResult = test()		
 	}
 }
