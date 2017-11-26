@@ -1,3 +1,5 @@
+package scala_step_by_step
+
 // single line comment
 
 /*
