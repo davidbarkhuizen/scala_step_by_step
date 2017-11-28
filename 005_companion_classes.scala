@@ -1,14 +1,6 @@
 package scala_step_by_step
 
-// single line comment
 
-/*
-	multi
-	line
-	comment\
-*/
-
-/** documentation comment */
 object singleton_object_module {
   
 	private def yo(sequence : Seq[Char]) : Unit = {
